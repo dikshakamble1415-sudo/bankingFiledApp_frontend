@@ -29,7 +29,7 @@ function Deposit() {
 
         try {
 
-            await API.post("http://localhost:8000/api/transactions/", {
+            await API.post("https://bankingfiledapp.onrender.com/api/transactions/", {
                 type: "deposit",
                 amount: amount.replace(/,/g, ""),
                 transactionPin

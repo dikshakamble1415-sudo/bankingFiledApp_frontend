@@ -13,7 +13,7 @@ function Transactions() {
     }, [])
 
     const fetchTransactions = async () => {
-        const res = await API.get("http://localhost:8000/api/transactions/")
+        const res = await API.get("https://bankingfiledapp.onrender.com/api/transactions/")
 
         // ✅ SORT BY LATEST FIRST
         const sorted = res.data.sort((a, b) => new Date(b.date) - new Date(a.date))

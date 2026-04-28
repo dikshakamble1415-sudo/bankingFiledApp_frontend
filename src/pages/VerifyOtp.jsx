@@ -17,7 +17,7 @@ function VerifyOTP() {
         console.log("Sending:", { email, otp }) // DEBUG
 
         try {
-            const res = await API.post("http://localhost:8000/api/auth/verify-otp", { email, otp })
+            const res = await API.post("https://bankingfiledapp.onrender.com/api/auth/verify-otp", { email, otp })
 
             console.log("Response:", res.data) // DEBUG
 

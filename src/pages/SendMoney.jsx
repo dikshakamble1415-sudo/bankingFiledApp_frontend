@@ -16,7 +16,7 @@ function SendMoney() {
     }, [])
 
     const fetchUsers = async () => {
-        const res = await API.get("http://localhost:8000/api/user/users")
+        const res = await API.get("https://bankingfiledapp.onrender.com/api/user/users")
         setUsers(res.data)
     }
 
@@ -44,7 +44,7 @@ function SendMoney() {
         }
 
         try {
-            await API.post("http://localhost:8000/api/transactions/", {
+            await API.post("https://bankingfiledapp.onrender.com/api/transactions/", {
                 type: "send",
                 amount: amount.replace(/,/g, ""),
                 recipient,

@@ -7,7 +7,7 @@ function Dashboard() {
     const [balance, setBalance] = useState(0)
 
     const fetchBalance = async () => {
-        const res = await API.get("http://localhost:8000/api/user/balance")
+        const res = await API.get("https://bankingfiledapp.onrender.com/api/user/balance")
         setBalance(res.data.balance)
     }
 

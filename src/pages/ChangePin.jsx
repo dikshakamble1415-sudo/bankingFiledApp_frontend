@@ -13,7 +13,7 @@ function ChangePin() {
     const change = async (e) => {
         e.preventDefault()
 
-        await API.post("http://localhost:8000/api/user/change-pin", {
+        await API.post("https://bankingfiledapp.onrender.com/api/user/change-pin", {
             currentPin,
             newPin,
             confirmNewPin

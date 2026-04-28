@@ -13,7 +13,7 @@ function Notifications() {
     }, [])
 
     const fetchNotifications = async () => {
-        const res = await API.get("http://localhost:8000/api/user/notifications")
+        const res = await API.get("https://bankingfiledapp.onrender.com/api/user/notifications")
         setNotifications(res.data.notifications)
     }
 

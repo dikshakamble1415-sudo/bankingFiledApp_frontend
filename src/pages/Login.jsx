@@ -16,7 +16,7 @@ function Login() {
         e.preventDefault()
 
         try {
-            const res = await API.post("http://localhost:8000/api/auth/login", { email, password })
+            const res = await API.post("https://bankingfiledapp.onrender.com/api/auth/login", { email, password })
 
             localStorage.setItem("token", res.data.token)
 

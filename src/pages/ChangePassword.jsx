@@ -13,7 +13,7 @@ function ChangePassword() {
     const change = async (e) => {
         e.preventDefault()
 
-        await API.post("http://localhost:8000/api/user/change-password", {
+        await API.post("https://bankingfiledapp.onrender.com/api/user/change-password", {
             currentPassword,
             newPassword,
             confirmPassword
